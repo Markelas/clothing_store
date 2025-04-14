@@ -1,0 +1,32 @@
+.root {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+  margin-top: 38px;
+}
+
+.mainLogo {
+  width: 123px;
+  height: 25px;
+  cursor: pointer;
+  margin-right: 27.4rem;
+}
+
+.buttons {
+  display: flex;
+  margin-right: 100px;
+}
+.button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}

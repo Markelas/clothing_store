@@ -1,13 +1,11 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import styles from "./Layout.module.scss";
-import { LayoutHeader } from "widgets/LayoutHeader/LayoutHeader.tsx";
+import { LayoutHeader } from "widgets/LayoutHeader/ui/LayoutHeader.tsx";
 
 export function Layout() {
   return (
-    <div>
-      <header className={styles.root}>
-        <LayoutHeader />
-      </header>
+    <div className={styles.root}>
+      <LayoutHeader />
       <div className={styles.container}>
         <div className={styles.content}>
           <Outlet />

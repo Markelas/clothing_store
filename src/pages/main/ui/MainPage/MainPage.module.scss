@@ -1,22 +1,38 @@
+@use 'shared/variables' as *;
+
 .hero {
   position: relative;
   height: 100vh;
   width: 100%;
   background-image: url("./main-cover-1.svg");
   background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
   z-index: -1;
+  margin-top: -85px;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1580px;
+}
+
+.mainText {
+  font-family: $second-family;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  font-size: 84px;
+  text-transform: uppercase;
+  color: white;
+  max-width: 1000px;
+  line-height: 100%;
+}
 
 .content {
-  max-width: 1440px;
   width: 100%;
-  margin: 30px auto 0 auto;
+  margin-top: 30px;
   border-radius: 51px;
   padding: 2rem;
   text-align: center;

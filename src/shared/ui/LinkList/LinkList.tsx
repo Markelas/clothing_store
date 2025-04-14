@@ -12,7 +12,7 @@ interface LinkListProps {
 
 export function LinkList({ links }: LinkListProps) {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.root}>
       {links.map(({ label, to }) => (
         <NavLink
           key={to}
