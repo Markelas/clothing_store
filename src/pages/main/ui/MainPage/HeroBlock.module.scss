@@ -1,0 +1,59 @@
+@use "shared/variables" as *;
+
+.root {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./main-cover-1.svg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: -85px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1580px;
+}
+
+.mainText {
+  font-family: $second-family;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  font-size: 84px;
+  text-transform: uppercase;
+  color: white;
+  max-width: 1000px;
+  line-height: 80%;
+}
+
+.discount {
+  position: relative;
+  display: inline-block;
+  right: 8px;
+  top: -10px;
+  font-size: 13px;
+  font-family: $font-family;
+  background-color: $black;
+  letter-spacing: 0.09rem;
+  color: $white;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 20px 32px;
+  line-height: 100%;
+  transform: rotate(4deg);
+}
+
+.button {
+  margin-top: 55px;
+  background-color: $white;
+  color: $gray-brown;
+  border-radius: 13px;
+  font-size: 16px;
+  letter-spacing: 0.07rem;
+  border: none;
+  padding: 26px 53px;
+  cursor: pointer;
+}

@@ -1,11 +1,11 @@
 .root {
+  position: relative;
   z-index: 1000;
   display: flex;
   justify-content: space-around;
   background-color: transparent;
   margin-top: 38px;
 }
-
 .mainLogo {
   width: 123px;
   height: 25px;
