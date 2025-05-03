@@ -3,7 +3,7 @@ import airImage1 from "./images/nike_air_max/air_image1.jpg";
 import dunkLowBrownImage1 from "./images/nike_dunk_low_brown/nike_dunk_low_image_1.jpg";
 import dunkLowPinkImage1 from "./images/nike_dunk_low_pink/nike_dunk_low_image_1.jpg";
 import airMoreImage1 from "./images/nike_air_more_uptempo/air_more_image1.jpg";
-import theNorthFaceBag from "./images/the_north_face_borealis_tote/the_north_face_borealis_image1.jpg";
+import jacquemusBag from "./images/jacquemus_bag/jacquemus_bag_image1.jpg";
 
 export const mockProducts: Product[] = [
   {
@@ -36,16 +36,16 @@ export const mockProducts: Product[] = [
   },
   {
     id: "5",
-    name: "Рюкзак The North Face Borealis Tote",
-    price: "8 499 ₽",
-    image: theNorthFaceBag,
+    name: "Сумка Jacquemus Le Bambidou",
+    price: "21 999 ₽",
+    image: jacquemusBag,
     badge: null,
   },
   {
     id: "6",
     name: "Рюкзак The North Face Borealis Tote",
-    price: "8 499 ₽",
-    image: theNorthFaceBag,
+    price: "21 999 ₽",
+    image: jacquemusBag,
     badge: null,
   },
 ];

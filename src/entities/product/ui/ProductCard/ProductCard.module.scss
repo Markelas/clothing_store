@@ -1,50 +1,80 @@
+@use "shared/variables" as *;
+
 .root {
-  width: 100%;
   max-width: clamp(220px, 25vw, 280px);
-  padding: 1rem;
+  padding: 12px 14px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 13px;
   background: white;
+  height: 298px;
+  cursor: pointer;
 
   @media (min-width: 640px) {
     max-width: 280px;
   }
 }
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+}
 
-img {
+.image {
+  position: relative;
   width: 100%;
-  height: auto;
+  max-width: 254px;
+  height: 148px;
+  overflow: hidden;
+  object-fit: contain;
   display: block;
+  margin-top: 10px;
 }
 
 .badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: red;
-  color: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
+  width: 59px;
+  height: 36px;
+  background: $black;
+  color: $white;
+  padding: 6px 15px;
+  border-radius: 13px;
   font-size: 0.75rem;
 }
 
 .favorite {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   background: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
-.info {
-  margin-top: 1rem;
+.productInfo {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   .name {
+    font-family: $font-family;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 15px;
+    color: $gray-brown-dark;
+    max-width: 170px;
+    margin: 0 auto;
+    line-height: 18px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .price {
-    color: #333;
-    font-size: 0.9rem;
+    font-family: $second-family;
+    font-size: 15px;
+    color: $gray-brown-dark;
+    font-weight: 400;
+    margin-top: 10px;
   }
 }
