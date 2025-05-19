@@ -1,9 +1,9 @@
 import styles from "./LayoutHeader.module.scss";
 import { LinkList } from "shared/ui/LinkList/LinkList.tsx";
 import MainLogo from "shared/icons/dealer-main-logo.svg?react";
-import Heart from "../icons/heart.svg?react";
-import Bag from "../icons/bag.svg?react";
-import Loupe from "../icons/loupe.svg?react";
+import Heart from "./icons/heart.svg?react";
+import Bag from "./icons/bag.svg?react";
+import Loupe from "./icons/loupe.svg?react";
 
 const links = [
   { label: "Одежда", to: "/" },
@@ -16,9 +16,15 @@ const links = [
 export function LayoutHeader() {
   return (
     <header className={styles.root}>
-      <LinkList links={links} />
-      <MainLogo className={styles.mainLogo} />
-      <div className={styles.buttons}>
+      <div className={styles.left}>
+        <LinkList links={links} />
+      </div>
+
+      <div className={styles.center}>
+        <MainLogo className={styles.mainLogo} />
+      </div>
+
+      <div className={styles.right}>
         <button className={styles.button}>
           <Heart className={styles.icon} />
         </button>

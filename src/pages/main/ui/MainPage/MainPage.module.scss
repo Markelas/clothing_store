@@ -1,27 +1,15 @@
 @use "shared/variables" as *;
-
-.sectionHeader{
-  display: flex;
-  justify-content: space-between;
-}
-.title {
-  font-family: $second-family;
-  font-weight: 500;
-  color: $black;
-  font-size: 40px;
-  letter-spacing: -0.05rem;
-}
-.viewAllBtn{
-  border-radius: 100px;
-  border: 1px solid $gray-brown;
-  padding: 10px 20px;
-  background-color: inherit;
-}
-
 .popular {
-  max-width: 1500px;
+  margin-bottom: 100px;
+}
+.new {
+  margin-top: 100px;
 }
 
-.carouselWrapper{
-  margin-top: 25px;
+.categoryGrid{
+  margin-top: 89px;
+}
+
+.eveningWalk {
+  margin-top: 100px;
 }

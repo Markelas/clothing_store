@@ -1,7 +1,7 @@
 @use "shared/variables" as *;
 
 .root {
-  max-width: clamp(220px, 25vw, 280px);
+  max-width: 284px;
   padding: 12px 14px;
   border: 1px solid #ccc;
   border-radius: 13px;
@@ -44,6 +44,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  margin-left: auto;
 
   svg {
     width: 20px;
@@ -52,10 +53,10 @@
 }
 
 .productInfo {
-  margin-top: 8px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 8px;
   .name {
     font-family: $font-family;
     font-weight: 600;
@@ -64,6 +65,7 @@
     max-width: 170px;
     margin: 0 auto;
     line-height: 18px;
+    text-align: center;
 
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -75,6 +77,6 @@
     font-size: 15px;
     color: $gray-brown-dark;
     font-weight: 400;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
   }
 }

@@ -3,5 +3,5 @@ export interface Product {
   name: string;
   price: string;
   image: string;
-  badge?: "HOT" | "SALE" | null;
+  badge?: "HOT" | "SALE" | null | undefined;
 }

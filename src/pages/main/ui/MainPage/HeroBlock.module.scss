@@ -9,12 +9,14 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  margin-top: -85px;
+  //margin-top: -85px;
+  margin: -85px auto 0 auto;
+
 }
 
 .container {
-  margin: 0 auto;
-  width: 1580px;
+  margin: 0 auto 0 165px;
+  max-width: 1580px;
 }
 
 .mainText {

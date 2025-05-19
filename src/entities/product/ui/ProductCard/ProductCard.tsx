@@ -1,13 +1,6 @@
 import styles from "./ProductCard.module.scss";
 import HeartIcon from "./heart-icon.svg?react";
-
-interface Product {
-  id: string;
-  name: string;
-  image: string;
-  price: string;
-  badge?: "HOT" | "SALE";
-}
+import { Product } from "entities/product/types.ts";
 
 export function ProductCard({ product }: { product: Product }) {
   return (

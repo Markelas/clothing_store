@@ -1,10 +1,21 @@
 .root {
-  margin-left: 85px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 29px;
+  margin-left: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
 }
 
-.link, .active {
+.link,
+.active {
   color: white;
   text-decoration: none;
-  margin-right: 30px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
+  font-size: 16px;
 }

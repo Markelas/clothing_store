@@ -1,0 +1,31 @@
+@use "shared/variables" as *;
+
+.section {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: $second-family;
+  font-weight: 500;
+  color: $black;
+  font-size: 40px;
+  letter-spacing: -0.05rem;
+}
+
+.button {
+  border-radius: 100px;
+  border: 1px solid $gray-brown;
+  padding: 10px 20px;
+  background-color: inherit;
+}
+
+.carouselWrapper {
+  margin-top: 25px;
+}

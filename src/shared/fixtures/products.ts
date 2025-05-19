@@ -1,4 +1,4 @@
-import { Product } from "../types";
+import { Product } from "entities/product/types";
 import airImage1 from "./images/nike_air_max/air_image1.jpg";
 import dunkLowBrownImage1 from "./images/nike_dunk_low_brown/nike_dunk_low_image_1.jpg";
 import dunkLowPinkImage1 from "./images/nike_dunk_low_pink/nike_dunk_low_image_1.jpg";
