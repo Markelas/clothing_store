@@ -1,0 +1,43 @@
+@use "shared/variables" as *;
+
+.sectionHeader {
+  display: flex;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  .circle {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .bar {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+  }
+}
+
+.header {
+  text-align: center;
+  .titleLook {
+    font-family: $second-family;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    display: inline-block;
+    transform: translateY(-40px);
+  }
+  .companyName {
+    font-family: $third-family;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: -0.02em;
+  }
+}

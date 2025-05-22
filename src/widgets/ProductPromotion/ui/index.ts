@@ -1,0 +1,1 @@
+export { ProductPromotion } from "./ProductPromotion";

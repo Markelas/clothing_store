@@ -1,9 +1,9 @@
 import styles from "./CategoryGrid.module.scss";
-import ClothesImage from "./images/clothes.svg?react";
-import ShoesImage from "./images/shoes.svg?react";
-import AccessoriesImage from "./images/accessories.svg?react";
-import BagsImage from "./images/bags.svg?react";
-import SportImage from "./images/sport.svg?react";
+import ClothesImage from "./images/clothes.jpg";
+import ShoesImage from "./images/shoes.jpg";
+import AccessoriesImage from "./images/accessories.jpg";
+import BagsImage from "./images/bags.jpg";
+import SportImage from "./images/sport.jpg";
 import cn from "classnames";
 
 interface Props {
@@ -11,25 +11,25 @@ interface Props {
 }
 export function CategoryGrid({ className }: Props) {
   return (
-    <div className={cn(styles.grid, className)}>
+    <div className={cn(styles.root, className)}>
       <div className={`${styles.item} ${styles.large}`}>
-        <ClothesImage className={styles.img} />
+        <img src={ClothesImage} className={styles.img} alt="Clothes" />
         <span>одежда</span>
       </div>
       <div className={`${styles.item} ${styles.large}`}>
-        <ShoesImage className={styles.img} />
+        <img src={ShoesImage} className={styles.img} alt="Shoes" />
         <span>обувь</span>
       </div>
       <div className={styles.item}>
-        <AccessoriesImage className={styles.img} />
+        <img src={AccessoriesImage} className={styles.img} alt="Accessories" />
         <span>аксессуары</span>
       </div>
       <div className={styles.item}>
-        <BagsImage className={styles.img} />
+        <img src={BagsImage} className={styles.img} alt="Bags" />
         <span>сумки</span>
       </div>
       <div className={styles.item}>
-        <SportImage className={styles.img} />
+        <img src={SportImage} className={styles.img} alt="Sport" />
         <span>для спорта</span>
       </div>
     </div>

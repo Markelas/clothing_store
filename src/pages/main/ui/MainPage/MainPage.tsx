@@ -5,6 +5,8 @@ import { mockProducts } from "shared/fixtures/products.ts";
 import { mockProductsNew } from "shared/fixtures/productsNew.ts";
 import { SectionWithCarousel } from "widgets/SectionWithCarousel/ui/SectionWithCarousel.tsx";
 import { CategoryGrid } from "widgets/CategoryGrid";
+import { ProductPromotion } from "widgets/ProductPromotion";
+// import { SpecialOffers } from "widgets/SpecialOffers/ui/SpecialOffers.tsx";
 
 export function MainPage() {
   return (
@@ -30,6 +32,8 @@ export function MainPage() {
           carouselId={"eveningWalk"}
           className={styles.eveningWalk}
         />
+        <ProductPromotion className={styles.productPromotion} />
+        {/*<SpecialOffers className={styles.specialOffers} />*/}
       </WhiteContainer>
     </>
   );

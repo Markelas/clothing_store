@@ -1,4 +1,6 @@
-.grid {
+@use "shared/variables" as *;
+
+.root {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -27,7 +29,7 @@
   span {
     position: relative;
     z-index: 2;
-    color: white;
+    color: $white;
     font-size: 24px;
     font-weight: 600;
     padding: 16px;
