@@ -1,34 +1,62 @@
-// import styles from "./SpecialOffers.module.scss";
-// import cn from "classnames";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation } from "swiper/modules";
-// import { ProductCard } from "entities/product/ui/ProductCard/ProductCard.tsx";
-//
-// interface Props {
-//   className?: string;
-// }
-//
-// const products = {};
-// export function SpecialOffers({ className }: Props) {
-//   return (
-//     <section className={cn(styles.root, className)}>
-//       <Swiper
-//         modules={[Navigation]}
-//         spaceBetween={17}
-//         breakpoints={{
-//           320: { slidesPerView: 1 },
-//           640: { slidesPerView: 2 },
-//           1024: { slidesPerView: 3 },
-//           1615: { slidesPerView: 5 },
-//         }}
-//         className={styles.swiper}
-//       >
-//         {products.map((product) => (
-//           <SwiperSlide key={product.id}>
-//             <ProductCard product={product} />
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-//     </section>
-//   );
-// }
+import styles from "./SpecialOffers.module.scss";
+import cn from "classnames";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Scrollbar } from "swiper/modules";
+import BestPrice from "../images/best_price.jpg";
+import Style from "../images/style.jpg";
+import Social from "../images/social.jpg";
+import Shops from "../images/shops.jpg";
+import { SpecialOffersCard } from "widgets/SpecialOffers/ui/SpecialOffersCard.tsx";
+
+interface Props {
+  className?: string;
+}
+
+const offers = [
+  {
+    id: 1,
+    name: "Гарантия лучшей цены",
+    img: BestPrice,
+  },
+  {
+    id: 2,
+    name: "Большое комьюнити",
+    img: Social,
+  },
+  {
+    id: 3,
+    name: "Только оригинальные бренды",
+    img: Style,
+  },
+  {
+    id: 4,
+    name: "Большая сеть магазинов",
+    img: Shops,
+  },
+];
+export function SpecialOffers({ className }: Props) {
+  return (
+    <section className={cn(styles.root, className)}>
+      <Swiper
+        modules={[Autoplay, Scrollbar]}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        scrollbar={{ hide: true }}
+        className={styles.swiper}
+      >
+        {offers.map((offer) => (
+          <SwiperSlide key={offer.id}>
+            <SpecialOffersCard
+              sourceImage={offer.img}
+              productName={offer.name}
+              className={styles.card}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
+  );
+}
