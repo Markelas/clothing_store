@@ -1,0 +1,49 @@
+.rangeSlider {
+  width: 231px;
+  margin: 13px 0;
+
+  :global {
+    .rc-slider-rail {
+      background-color: #ccc;
+      height: 4px;
+    }
+
+    .rc-slider-track {
+      background-color: #ff9800;
+      height: 3px;
+    }
+
+    .rc-slider-handle {
+      background-color: white;
+      border: 1px solid black;
+    }
+  }
+}
+
+.rangeInputs {
+  display: flex;
+  gap: 8px;
+
+  .inputWrapper {
+    position: relative;
+    display: inline-block;
+
+    input {
+      border: 1px solid #b3b3b3;
+      width: 107px;
+      height: 30px;
+      padding: 6px 20px 6px 6px;
+      border-radius: 8px;
+    }
+
+    .currency {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #cccccc;
+      pointer-events: none;
+      font-size: 14px;
+    }
+  }
+}

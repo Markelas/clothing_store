@@ -1,7 +1,7 @@
 export interface Product {
-  id: string;
+  id: number;
   name: string;
-  price: string;
+  price: number;
   image: string;
   badge?: "HOT" | "SALE" | null | undefined;
 }

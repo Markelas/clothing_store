@@ -5,15 +5,17 @@ import "swiper/css/navigation";
 import styles from "./ProductCarousel.module.scss";
 import { ProductCard } from "entities/product/ui/ProductCard/ProductCard.tsx";
 import { Product } from "entities/product/types.ts";
+import cn from "classnames";
 
 interface Props {
   products: Product[];
   carouselId: string;
+  className: string;
 }
 
-export function ProductCarousel({ products, carouselId }: Props) {
+export function ProductCarousel({ products, carouselId, className }: Props) {
   return (
-    <div className={styles.wrapper}>
+    <div className={cn(styles.wrapper, className)}>
       <div className={styles.navigation}>
         <div className={`${styles.prev} prev-${carouselId}`}></div>
         <div className={`${styles.next} next-${carouselId}`}></div>

@@ -7,6 +7,7 @@ import { SectionWithCarousel } from "widgets/SectionWithCarousel/ui/SectionWithC
 import { CategoryGrid } from "widgets/CategoryGrid";
 import { ProductPromotion } from "widgets/ProductPromotion";
 import { SpecialOffers } from "widgets/SpecialOffers/ui/SpecialOffers.tsx";
+import { PriceFilterSection } from "widgets/PriceFilterSection/ui/PriceFilterSection.tsx";
 
 export function MainPage() {
   return (
@@ -34,6 +35,7 @@ export function MainPage() {
         />
         <ProductPromotion className={styles.productPromotion} />
         <SpecialOffers className={styles.specialOffers} />
+        <PriceFilterSection className={styles.priceFilterSection} />
       </WhiteContainer>
     </>
   );

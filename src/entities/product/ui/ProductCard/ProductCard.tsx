@@ -1,6 +1,7 @@
 import styles from "./ProductCard.module.scss";
 import HeartIcon from "./heart-icon.svg?react";
 import { Product } from "entities/product/types.ts";
+import { formatPrice } from "shared/lib";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
@@ -14,7 +15,7 @@ export function ProductCard({ product }: { product: Product }) {
       <img className={styles.image} src={product.image} alt={product.name} />
       <div className={styles.productInfo}>
         <h3 className={styles.name}>{product.name}</h3>
-        <p className={styles.price}>{product.price}</p>
+        <p className={styles.price}>{formatPrice(product.price)}</p>
       </div>
     </div>
   );
