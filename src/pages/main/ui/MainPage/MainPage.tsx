@@ -8,6 +8,7 @@ import { CategoryGrid } from "widgets/CategoryGrid";
 import { ProductPromotion } from "widgets/ProductPromotion";
 import { SpecialOffers } from "widgets/SpecialOffers/ui/SpecialOffers.tsx";
 import { PriceFilterSection } from "widgets/PriceFilterSection/ui/PriceFilterSection.tsx";
+import { SpecialCategories } from "widgets/SpecialСategories";
 
 export function MainPage() {
   return (
@@ -36,6 +37,7 @@ export function MainPage() {
         <ProductPromotion className={styles.productPromotion} />
         <SpecialOffers className={styles.specialOffers} />
         <PriceFilterSection className={styles.priceFilterSection} />
+        <SpecialCategories className={styles.specialCategories} />
       </WhiteContainer>
     </>
   );

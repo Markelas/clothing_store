@@ -2,10 +2,10 @@ import styles from "./SpecialOffers.module.scss";
 import cn from "classnames";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar } from "swiper/modules";
-import BestPrice from "../images/best_price.jpg";
-import Style from "../images/style.jpg";
-import Social from "../images/social.jpg";
-import Shops from "../images/shops.jpg";
+import BestPrice from "./images/best_price.jpg";
+import Style from "./images/style.jpg";
+import Social from "./images/social.jpg";
+import Shops from "./images/shops.jpg";
 import { SpecialOffersCard } from "widgets/SpecialOffers/ui/SpecialOffersCard.tsx";
 
 interface Props {
