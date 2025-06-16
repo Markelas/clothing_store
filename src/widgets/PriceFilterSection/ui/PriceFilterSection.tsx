@@ -4,6 +4,7 @@ import { useState } from "react";
 import { mockProducts } from "shared/fixtures/products";
 import { ProductCarousel } from "widgets/ProductCarousel";
 import { PriceRangeSelector } from "shared/ui/PriceRangeSelector/PriceRangeSelector";
+import { GradientButton } from "shared/ui/GradientButton/GradientButton.tsx";
 
 interface Props {
   className: string;
@@ -45,9 +46,11 @@ export function PriceFilterSection({ className }: Props) {
               />
             </label>
 
-            <button onClick={handleFilter} className={styles.button}>
-              Подобрать
-            </button>
+            <GradientButton
+              onClick={handleFilter}
+              className={styles.button}
+              buttonText="Подобрать"
+            />
           </div>
         </div>
 

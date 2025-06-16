@@ -1,6 +1,6 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import styles from "./Layout.module.scss";
-import { LayoutHeader } from "widgets/LayoutHeader/ui/LayoutHeader.tsx";
+import { LayoutHeader } from "widgets/LayoutHeader";
 
 export function Layout() {
   return (

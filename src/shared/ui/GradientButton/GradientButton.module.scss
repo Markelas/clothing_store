@@ -1,0 +1,24 @@
+@use "shared/variables" as *;
+
+.root {
+  font-family: $font-family;
+  padding: 20px 40px;
+  border: 1px solid #b3b3b3;
+  border-radius: 13px;
+  background: linear-gradient(81deg, $black 0%, $white 170%);
+  color: $white;
+  cursor: pointer;
+  font-size: 14px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}

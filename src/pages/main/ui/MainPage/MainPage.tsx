@@ -9,6 +9,8 @@ import { ProductPromotion } from "widgets/ProductPromotion";
 import { SpecialOffers } from "widgets/SpecialOffers/ui/SpecialOffers.tsx";
 import { PriceFilterSection } from "widgets/PriceFilterSection/ui/PriceFilterSection.tsx";
 import { SpecialCategories } from "widgets/SpecialСategories";
+import { SellShoesWithUs } from "widgets/SellShoesWithUs";
+import { DiscountSection } from "widgets/DiscountSection";
 
 export function MainPage() {
   return (
@@ -38,6 +40,9 @@ export function MainPage() {
         <SpecialOffers className={styles.specialOffers} />
         <PriceFilterSection className={styles.priceFilterSection} />
         <SpecialCategories className={styles.specialCategories} />
+        <hr className={styles.sectionDivider} />
+        <SellShoesWithUs className={styles.sellShoesWithUs} />
+        <DiscountSection className={styles.discountSection} />
       </WhiteContainer>
     </>
   );
