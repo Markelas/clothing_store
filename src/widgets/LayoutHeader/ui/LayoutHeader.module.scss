@@ -1,3 +1,5 @@
+@use "shared/variables" as *;
+
 .root {
   position: relative;
   z-index: 1000;
@@ -39,6 +41,7 @@
   width: 123px;
   height: 25px;
   cursor: pointer;
+  color: $white;
 }
 
 .button {

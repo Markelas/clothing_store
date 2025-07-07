@@ -29,8 +29,9 @@
     height: 100%;
     background: white;
     z-index: 1;
-    transition: width 0.5s ease;
+    overflow: hidden;
   }
+
 
   .img {
     position: absolute;
@@ -78,4 +79,22 @@
       color: black;
     }
   }
+}
+
+.itemMixer::before {
+  background: white url("./images/bred_fr_mixer_hover.jpg") no-repeat left center;
+  background-size: 80% auto;
+  transition: width 0.3s ease;
+}
+
+.itemAirJordan::before {
+  background: white url("./images/nike_air_jordan_1_hover.jpg") no-repeat left center;
+  background-size: 80% auto;
+  transition: width 0.3s ease;
+}
+
+.itemAirMaximus::before {
+  background: white url("./images/nike_air_maximus_hover.jpg") no-repeat left center;
+  background-size: 80% auto;
+  transition: width 0.3s ease;
 }

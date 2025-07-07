@@ -13,7 +13,7 @@ export function ProductPromotion({ className }: Props) {
     <section className={cn(styles.root, className)}>
       <ProductPromotionHeader />
       <div className={styles.cardBox}>
-        <div className={styles.item}>
+        <div className={cn(styles.item, styles.itemMixer)}>
           <img
             src={BredFrMixerImage}
             className={styles.img}
@@ -22,7 +22,7 @@ export function ProductPromotion({ className }: Props) {
           <span>BRED FR MIXER</span>
           <button></button>
         </div>
-        <div className={styles.item}>
+        <div className={cn(styles.item, styles.itemAirJordan)}>
           <img
             src={NikeAirJordanImage}
             className={styles.img}
@@ -31,7 +31,7 @@ export function ProductPromotion({ className }: Props) {
           <span>Nike Air Jordan 1</span>
           <button></button>
         </div>
-        <div className={styles.item}>
+        <div className={cn(styles.item, styles.itemAirMaximus)}>
           <img
             src={NikeAirMaximus}
             className={styles.img}
