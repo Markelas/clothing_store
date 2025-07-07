@@ -1,7 +1,7 @@
 import styles from "./MainPage.module.scss";
 import { HeroBlock } from "pages/main/ui/MainPage/HeroBlock.tsx";
 import { WhiteContainer } from "shared/ui/WhiteContainer/WhiteContainer.tsx";
-import { mockProducts } from "shared/fixtures/products.ts";
+import { mockPopularProducts } from "shared/fixtures/products.ts";
 import { mockProductsNew } from "shared/fixtures/productsNew.ts";
 import { SectionWithCarousel } from "widgets/SectionWithCarousel/ui/SectionWithCarousel.tsx";
 import { CategoryGrid } from "widgets/CategoryGrid";
@@ -19,7 +19,7 @@ export function MainPage() {
       <WhiteContainer>
         <SectionWithCarousel
           title="Самое популярное сейчас"
-          products={mockProducts}
+          products={mockPopularProducts}
           carouselId={"popular"}
           className={styles.popular}
         />

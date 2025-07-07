@@ -3,5 +3,6 @@ export interface Product {
   name: string;
   price: number;
   image: string;
-  badge?: "HOT" | "SALE" | null | undefined;
+  color: string;
+  badge?: "HOT" | "SALE" | "NEW" | null | undefined;
 }

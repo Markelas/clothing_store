@@ -1,17 +1,19 @@
 import cn from "classnames";
 import styles from "./PriceFilterSection.module.scss";
 import { useState } from "react";
-import { mockProducts } from "shared/fixtures/products";
+import { mockPopularProducts } from "shared/fixtures/products";
 import { ProductCarousel } from "widgets/ProductCarousel";
 import { PriceRangeSelector } from "shared/ui/PriceRangeSelector/PriceRangeSelector";
 import { GradientButton } from "shared/ui/GradientButton/GradientButton.tsx";
+import { mockProductsNew } from "shared/fixtures/productsNew.ts";
 
 interface Props {
   className: string;
 }
 
 export function PriceFilterSection({ className }: Props) {
-  const prices = mockProducts.map((p) => p.price);
+  const allProducts = [...mockPopularProducts, ...mockProductsNew];
+  const prices = allProducts.map((p) => p.price);
   const realMinPrice = Math.min(...prices);
   const realMaxPrice = Math.max(...prices);
 
@@ -19,16 +21,16 @@ export function PriceFilterSection({ className }: Props) {
     realMinPrice,
     realMaxPrice,
   ]);
-  const [filtered, setFiltered] = useState(mockProducts);
+  const [filtered, setFiltered] = useState(allProducts);
 
   const handleFilter = () => {
     const [min, max] = range;
-    const results = mockProducts.filter(
+    const results = allProducts.filter(
       (item) => item.price >= min && item.price <= max,
     );
     setFiltered(results);
   };
-
+  console.log("filtered", filtered, filtered.length > 0);
   return (
     <section className={cn(styles.root, className)}>
       <h2 className={styles.title}>Подберём пару по бюджету</h2>
